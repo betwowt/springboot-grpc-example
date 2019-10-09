@@ -8,5 +8,5 @@ spring:
     consul:
       discovery:
         preferIpAddress: true
-        healthCheckPath: ${management.server.servlet.context-path}/health
+        healthCheckPath: /actuator/health
         healthCheckInterval: 15s
