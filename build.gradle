@@ -1,0 +1,26 @@
+group 'com.betwowt'
+version '1.0-SNAPSHOT'
+
+allprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven { url "https://repo.spring.io/milestone" }
+    }
+}
+
+subprojects {
+
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+
+}
+
+repositories {
+    mavenCentral()
+}
+
