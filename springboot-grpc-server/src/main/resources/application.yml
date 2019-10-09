@@ -1,0 +1,7 @@
+grpc:
+  port: 6565
+spring:
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
