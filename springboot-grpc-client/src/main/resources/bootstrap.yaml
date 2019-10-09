@@ -1,8 +1,7 @@
 spring:
   application:
-    name: server-example
+    name: client-example
   cloud:
-    # 多网卡设置
 #    inetutils:
 #      preferredNetworks:
 #        10.10.10

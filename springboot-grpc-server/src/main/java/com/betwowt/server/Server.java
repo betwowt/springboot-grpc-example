@@ -26,6 +26,8 @@ public class Server {
     public static class GreeterService extends GreeterGrpc.GreeterImplBase {
         @Override
         public void sayHello(GreeterOuterClass.HelloRequest request, StreamObserver<GreeterOuterClass.HelloReply> responseObserver) {
+            String name = request.getName();
+            log.info("client :"+name);
             responseObserver.onNext(GreeterOuterClass.HelloReply.newBuilder().setMessage("hi,i am server").build());
             responseObserver.onCompleted();
         }
